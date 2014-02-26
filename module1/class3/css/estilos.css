@@ -1,0 +1,26 @@
+/*
+*{
+	background-color: rgb(245,238,49);
+}
+*/
+body{
+	background-color: rgb(245,238,49);
+	font-size: 20px;
+}
+header{
+	width: 20em;
+	background-color: red;
+}
+nav{
+/*	border: 1em solid pink; */
+	border-width: 1em;
+	border-style: solid;
+	border-color: pink;
+}
+nav a{
+	color: red;
+	text-decoration: none;
+}
+nav a:hover{
+	color: green;
+}

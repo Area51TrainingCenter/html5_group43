@@ -1,0 +1,42 @@
+body{
+	background-image: url("../img/bg4.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+header{
+	border-width: 3px;
+	border-style: solid;
+	border-color: red;
+	background-color: rgba(200,150,120,0.25);
+}
+/*
+header a{
+	display: block;
+}
+*/
+header hgroup{
+	background-image: url("../img/logo1.jpg");
+	background-repeat: no-repeat;
+/*	text-indent: -5000px; */
+	width: 200px;
+	height: 91px;
+}
+header h1, header h2{
+	display: none;
+/*	visibility: hidden; */
+}
+nav ul{
+	list-style: none;
+}
+nav li{
+	display: inline-block;
+}
+nav a{
+	text-decoration: none;
+	display: block;
+	padding: 5px 20px 8px 20px;
+	color: red;
+}
+nav a:hover{
+	background-color: rgba(250,150,20,0.5);
+}

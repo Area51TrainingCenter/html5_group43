@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tienda 1 - El primer ejemplo de una web</title>
+	<meta name="description" content="Un ejemplo real de una web usando HTML5 y CSS" />
+	<link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+	<header>
+		<a href="index.html" title="Portada de Tienda 1">
+			<hgroup>
+				<h1>Tienda 1</h1>
+				<h2>El primer ejemplo de una web</h2>
+			</hgroup>
+		</a>
+		<nav>
+			<ul>
+				<li class="actual"><a href="index.html" title="Tienda 1">Inicio</a></li>
+				<li><a href="#nosotros" title="Acerca de Tienda 1">Nosotros</a></li>
+				<li><a href="#servicios" title="Todo lo que te ofrece Tienda 1">Servicios</a></li>
+				<li><a href="#contacto" title="Comunicate con Tienda 1">Contacto</a></li>
+			</ul>
+		</nav>
+		<ul>
+			<li id="twitter"><a href="#Twitter" title="@Tienda1 en Twitter">Sigue @Tienda1 en Twitter</a></li>
+			<li id="facebook"><a href="#Facebook" title="Siguenos a Tienda en Facebook">Tienda1 en Facebook</a></li>
+		</ul>
+	</header>
+	<section id="fotazo">
+		<figure>
+			<img src="img/central1.jpg" alt="Tienda 1, descripción 1" />
+			<figcaption>Título 1, descripción 1</figcaption>
+		</figure>
+	</section>
+	<section id="video_portada">
+		<img src="img/bg1.png" alt="Aca ira un vídeo" />
+	</section>
+	<section id="boletin_portada">
+		<form name="boletin">
+			<fieldset>
+				<legend>Suscribete al boletín de noticias</legend>
+				<p>
+					<label for="txt_nombre">Nombre</label>
+					<input type="text" name="nombre" id="txt_nombre" />
+				</p>
+				<p>
+					<label for="txt_correo">Correo</label>
+					<input type="email" name="correo" id="txt_correo" />
+				</p>
+				<p>
+					<label for="txt_cantidad">Cantidad</label>
+					<input type="number" name="cantidad" id="txt_cantidad" />
+				</p>
+				<p>
+					<label for="txt_fecnac">Fecha de Nacimiento</label>
+					<input type="date" name="fecnac" id="txt_fecnac" />
+				</p>
+				<p>
+					<button type="button">Suscribirse</button>
+					<!-- <input type="button" value="Suscribirse"> -->
+				</p>
+			</fieldset>
+		</form>
+	</section>
+	<section id="buscador_portada">
+		<form name="buscador">
+			<fieldset>
+				<legend>Buscador</legend>
+				<input type="text" name="q" id="txt_buscador" />
+			</fieldset>
+		</form>
+	</section>
+	<section id="oferta_portada">
+		<h3>Oferta</h3>
+		<img src="img/bg1.png" alt="Banner de oferta" />		
+	</section>
+	<section id="facebook_portada">
+		<!-- 
+		developer.facebook.com
+		 -->
+	</section>
+	<footer>
+		<p><a href="index.html" title="Portada de Tienda 1">Inicio</a> | <a href="#nosotros" title="Acerca de Tienda 1">Nosotros</a> | <a href="#servicios" title="Servicios de Tienda 1">Servicios</a> | <a href="#contacto" title="Comunicate con Tienda 1">Contacto</a></p>
+	</footer>
+</body>
+</html>
