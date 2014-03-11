@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tienda 1 - El primer ejemplo de una web</title>
+	<meta name="description" content="Un ejemplo real de una web usando HTML5 y CSS" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<header>
+		<a href="index.html" title="Portada de Tienda 1">
+			<hgroup>
+				<h1>Tienda 1</h1>
+				<h2>El primer ejemplo de una web</h2>
+			</hgroup>
+		</a>
+		<nav>
+			<ul>
+				<li class="actual"><a href="index.html" title="Tienda 1">Inicio</a></li>
+				<li><a href="#nosotros" title="Acerca de Tienda 1">Nosotros</a></li>
+				<li><a href="#servicios" title="Todo lo que te ofrece Tienda 1">Servicios</a></li>
+				<li><a href="#contacto" title="Comunicate con Tienda 1">Contacto</a></li>
+			</ul>
+		</nav>
+		<ul>
+			<li><a href="#Twitter" title="@Tienda1 en Twitter" id="twitter" class="redsocial">Sigue @Tienda1 en Twitter</a></li>
+			<li><a href="#Facebook" title="Siguenos a Tienda en Facebook" id="facebook" class="redsocial">Tienda1 en Facebook</a></li>
+		</ul>
+		<div class="limpiar"></div>
+	</header>
+	<div id="izquierda">
+		<section id="fotazo">
+			<figure>
+				<img src="img/central1.jpg" alt="Tienda 1, descripción 1" />
+				<figcaption>Título 1, descripción 1</figcaption>
+			</figure>
+		</section>
+		<section id="video_portada">
+			<video width="320" height="240" controls>
+				<source src="video/mov_bbb.mp4" type="video/mp4" />
+	 			<source src="video/mov_bbb.ogg" type="video/ogg" />
+	 			Tu navegador es muy antiguo para ver este divertido video.
+			</video>
+		</section>
+		<section id="boletin_portada">
+			<form name="boletin">
+				<fieldset>
+					<legend>Suscribete al boletín de noticias</legend>
+					<p>
+						<label for="txt_nombre">Nombre</label>
+						<input type="text" name="nombre" id="txt_nombre" />
+					</p>
+					<p>
+						<label for="txt_correo">Correo</label>
+						<input type="email" name="correo" id="txt_correo" />
+					</p>
+					<p>
+						<label for="txt_cantidad">Cantidad</label>
+						<input type="number" name="cantidad" id="txt_cantidad" />
+					</p>
+					<p>
+						<label for="txt_fecnac">Fecha de Nacimiento</label>
+						<input type="date" name="fecnac" id="txt_fecnac" />
+					</p>
+					<p>
+						<button type="button">Suscribirse</button>
+						<!-- <input type="button" value="Suscribirse"> -->
+					</p>
+				</fieldset>
+			</form>
+		</section>
+	</div>
+	<div id="derecha">
+		<section id="buscador_portada">
+			<form name="buscador">
+				<fieldset>
+					<legend>Buscador</legend>
+					<input type="text" name="q" id="txt_buscador" />
+				</fieldset>
+			</form>
+		</section>
+		<section id="oferta_portada">
+			<h3>Oferta</h3>
+			<img src="img/bg1.png" alt="Banner de oferta" />		
+		</section>
+		<section id="facebook_portada">
+			<!-- <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FArea51.pe&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;" allowTransparency="true"></iframe> -->
+			<!-- <div class="fb-share-button" data-href="http://diegolerma.info" data-type="button_count"></div> -->
+			<!--<div class="fb-like" data-href="https://facebook.com/Area51.pe" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div> -->
+		</section>
+	</div>
+	<div class="limpiar"></div>
+	<footer>
+		<p><a href="index.html" title="Portada de Tienda 1">Inicio</a> | <a href="#nosotros" title="Acerca de Tienda 1">Nosotros</a> | <a href="#servicios" title="Servicios de Tienda 1">Servicios</a> | <a href="#contacto" title="Comunicate con Tienda 1">Contacto</a></p>
+	</footer>
+</body>
+</html>

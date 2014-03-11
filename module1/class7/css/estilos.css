@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* Llamada externa */
+/* @import url("reset.css"); */
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+*:before, *:after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+body{
+	background-image: url("../img/bg4.png");
+	font-size: 15px;
+}
+#contenedor{
+	width: 70%;
+	border: 1px solid red;
+	margin: 38px auto 0;
+}
+header{
+	position: fixed;
+	border: 1px solid blue;
+	width: 100%;
+	top: 0px;
+}
+#logo{
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+header hgroup{
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	border: 1px solid pink;
+	background-color: red;
+	width: 111px;
+	height: 32px;
+}
+header hgroup h1, header hgroup h2{
+	visibility: hidden;
+}
+header nav{
+	background-color: rgba(125,200,17,0.5);
+	width: 70%;
+	margin: 0 auto;
+}
+header nav ul{
+	list-style: none;
+}
+header nav li{
+	display: inline-block;
+}
+header nav a{
+	display: block;
+	padding: 10px 30px;
+	color: brown;
+	text-decoration: none;
+}
+header nav a:hover, header .actual{
+	background-color: rgba(125,200,17,0.9);
+	text-decoration: underline;
+}
+#contenido{
+	width: 60%;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+}
+#lateral{
+	width: 39%;
+	border: 1px solid grey;
+	padding: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+article{
+	border: 1px solid purple;
+	margin: 50px auto;
+	padding: 10px;
+	position: relative;
+	border-radius: 10px 20px 30px 40px;
+	width: 70%;
+	box-shadow: 0px 0px 30px red;
+}
+article h3{
+	font-size: 2em;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted black;
+	text-shadow: 50px 30px 1px blue;
+}
+article img{
+	width: 50%;
+	margin: 10px;
+	float: right;
+	min-width: 80px;
+	max-width: 100px;
+}
+article .oferta{
+	position: absolute;
+	top: -40px;
+	right: -40px;
+	width: 40px;
+	border-radius: 50%;
+}
+input{
+	background-color: transparent;
+	border: none;
+}
+input:hover, select:hover{
+	background-color: rgba(100,50,200,0.5);
+}
+input:focus, select:focus{
+	border: 3px solid green;
+	background-color: rgba(100,50,200,0.7);
+}

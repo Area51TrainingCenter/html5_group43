@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Noticias</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<header>
+		<a href="index.html" title="Portada de Agencia de Noticias" id="logo">
+			<hgroup>
+				<h1>Agencia de Noticias</h1>
+				<h2>Siempre informado, siempre al día</h2>
+			</hgroup>
+		</a>
+		<nav>
+			<ul>
+				<li><a href="index.html" title="Portada de agencia de noticias">Portada</a></li>
+				<li><a href="#noticias" title="Todas las noticias del día" class="actual">Noticias</a></li>
+				<li><a href="#contacto" title="Comunicate con nosotros">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="contenedor">
+		<section id="contenido">
+			<article>
+				<img src="img/bg2.png" class="oferta">
+				<h3>Noticia importante de portada 1</h3>
+				<img src="img/bg1.png">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, iste, vel, velit perspiciatis neque laudantium quos minima minus ipsa saepe fuga repellat necessitatibus veritatis aperiam deleniti dignissimos eaque ratione molestias!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique voluptatum sit dicta incidunt consequuntur molestiae ratione cumque nam. Alias, quis, asperiores cum repudiandae quibusdam quasi accusamus adipisci dolore ex.</p>
+				<p><a href="#mas" title="Leer más">Leer más</a></p>
+			</article>
+			<article>
+				<h3>Noticia 1</h3>
+				<img src="img/bg1.png">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, iste, vel, velit perspiciatis neque laudantium quos minima minus ipsa saepe fuga repellat necessitatibus veritatis aperiam deleniti dignissimos eaque ratione molestias!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique voluptatum sit dicta incidunt consequuntur molestiae ratione cumque nam. Alias, quis, asperiores cum repudiandae quibusdam quasi accusamus adipisci dolore ex.</p>
+				<p><a href="#mas" title="Leer más">Leer más</a></p>
+			</article>
+			<article>
+				<h3>Noticia 1</h3>
+				<img src="img/bg1.png">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, iste, vel, velit perspiciatis neque laudantium quos minima minus ipsa saepe fuga repellat necessitatibus veritatis aperiam deleniti dignissimos eaque ratione molestias!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique voluptatum sit dicta incidunt consequuntur molestiae ratione cumque nam. Alias, quis, asperiores cum repudiandae quibusdam quasi accusamus adipisci dolore ex.</p>
+				<p><a href="https://docs.google.com/presentation/d/1Fvg8DShuIx8kFj-8VkXEqq4QFCgIJVZ8OGRE0NEN0E4/edit?usp=sharing">Ver presentación de clase</a></p>
+				<p><a href="#mas" title="Leer más">Leer más</a></p>
+			</article>
+		</section>
+		<section id="lateral">
+			<section id="buscador">
+				<form name="buscar" id="frmBuscador" method="get">
+					<input type="text" name="q" id="txtBuscar" placeholder="Buscar..." />
+					<select name="cat" id="cbCategorias">
+						<option value="18">Miraflores</option>
+						<option value="27">San Isidro</option>
+					</select>
+				</form>			
+			</section>
+			<section id="banner">
+				<img src="img/bg1.png" />
+			</section>
+	<!--		<div class="fb-like-box" data-href="http://www.facebook.com/Area51.pe" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
+			<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FArea51.pe&amp;width&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:258px;" allowTransparency="true"></iframe>
+		-->
+		</section>
+		<footer>
+			<p>&copy; Todos los derechos reservados.</p>
+			<p><img src="img/logo-footer.png"></p>
+		</footer>
+	</div>
+</body>
+</html>
