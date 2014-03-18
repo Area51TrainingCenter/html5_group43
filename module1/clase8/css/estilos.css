@@ -1,0 +1,21 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+*:before, *:after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+body{
+/*	background-image: url("../img/logo.png"), url("../img/bg2.png"),url("../img/scene-1.jpg");
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: 40% 50px, 200px 100px, 0px 0px;
+*/
+}

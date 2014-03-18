@@ -1,0 +1,76 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+/* Todos los enlaces (<a>) cuyo atributo "href" empiece con "https" */
+a[href^="https:"] {
+	color: red;
+}
+/* Todos los enlaces (<a>) cuyo atributo "href" termine con ".html" */
+a[href$=".html"] {
+	color: green;
+}
+/* Selecciona todos elementos que tengan en el atributo "class" la palabra "negrito" */
+*[data-hola*="adios"] {
+	background-color: pink;
+}
+
+/* Selectores */
+p + ul{
+	background-color: red;
+}
+h2 ~ ul{
+	background-color: yellow;
+}
+p > strong{
+	background-color: green;
+}
+
+
+p::first-line{
+	font-weight: bold;
+}
+p::first-letter{
+	font-size: 5em;
+	font-style: italic;
+}
+
+nav a::before{
+	content: '\266A   ';
+}
+nav a::after{
+	content: ' \2665';
+}
+/*
+li:nth-child(even){
+	* Pares *
+	background-color: grey;
+}
+li:nth-child(odd){
+	* Impares *
+	background-color: rgba(200,100,50,0.5);
+}
+li:nth-child(3){ 
+	* 2n + 1 *
+	background-color: grey;
+}
+*/
+li:first-child{
+	background-color: skyblue;
+}
+li:last-child{
+	background-color: navy;
+}
+td:empty{
+	border: 1px solid red;
+}
+p{
+	font-family: 'Sigmar One', cursive;
+}
+ul{
+	font-family: 'Iceland', cursive;
+}

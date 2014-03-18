@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Repaso y Formularios</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+	<form name="registro" method="get" id="frmRegistro">
+		<fieldset>
+			<legend>Datos básicos</legend>
+			<p>
+				<label for="txtNombre">Nombre</label>
+				<input type="text" name="nombre" id="txtNombre" placeholder="Indica tu nombre" title="Por favor, ponga sus nombres completos" required />
+			</p>
+			<p>
+				<label for="txtCorreo">Correo</label>
+				<input type="email" name="correo" id="txtCorreo" placeholder="Indica tu correo" required />
+			</p>
+			<p>
+				<label for="txtClave">Clave</label>
+				<input type="password" name="clave" id="txtClave" placeholder="Indica tu clave" required /> 
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Intereses</legend>
+			<p>Seleccione su(s) deporte(s) fávorito(s):</p>
+			<p>
+				<input type="checkbox" name="deportes" id="chkDeporte_Futbol" value="Futbol" />
+				<label for="chkDeporte_Futbol">Fútbol</label>
+			</p>
+			<p>
+				<input type="checkbox" name="deportes" id="chkDeporte_Voley" value="Voley" />
+				<label for="chkDeporte_Voley">Voley</label>
+			</p>
+			<p>
+				<input type="checkbox" name="deportes" id="chkDeporte_Tenis" value="Tenis" />
+				<label for="chkDeporte_Tenis">Tenis</label>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Opinión</legend>
+			<p>¿Qué te parece mi sitio web?</p>
+			<p>
+				<input type="radio" name="opinion" id="rdOpinion_Bien" value="1" />
+				<label for="rdOpinion_Bien" required>Buena</label>
+				<input type="radio" name="opinion" id="rdOpinion_Regular" value="0" required />
+				<label for="rdOpinion_Regular">Regular</label>
+				<input type="radio" name="opinion" id="rdOpinion_Mala" value="Mala" required />
+				<label for="rdOpinion_Mala">Mala</label>
+			</p>
+			<p>
+				<label for="txtComentario">Comentario</label>
+				<textarea name="comentario" id="txtComentario" placeholder="Indica tu comentario"></textarea>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Tipo de pago</legend>
+			<p>
+				<label for="cbPago">Modalidad de Pago</label>
+				<select name="pago" id="cbPago">
+					<option value="TC">Tarjeta de crédito</option>
+					<option value="Cheque">Cheque</option>
+					<option value="Efectivo" selected>Efectivo</option>
+				</select>
+			</p>
+			<p>
+				<label for="flVoucher">Voucher de pago</label>
+				<input type="file" name="voucher" id="flVoucher" placeholder="Hola">
+			</p>
+		</fieldset>
+		<p>
+			<button type="submit">Enviar</button>
+			<button type="reset">Borrar</button>
+		</p>
+		<p>
+			<button type="button">Regresar</button>
+		</p>
+	</form>
+	<hr />
+	<form name="prueba" method="post" id="frmPrueba">
+		<p>
+			<input type="text" name="texto" placeholder="Texto" />
+		</p>
+		<p>
+			<input type="email" name="correo" placeholder="E-mail" />
+		</p>
+		<p>
+			<input type="number" name="numero" placeholder="Números" />
+		</p>
+		<p>
+			<input type="url" name="web" placeholder="Dirección web" />
+		</p>
+		<p>
+			<input type="date" name="fecha" placeholder="Fecha" />
+		</p>
+		<p>
+			<input type="range" name="rango" placeholder="Rango" />
+		</p>
+		<p>
+			<input type="color" name="color" placeholder="Color" />
+		</p>
+		<p>
+			<input type="time" name="hora" placeholder="Hora" />
+		</p>
+		<p>
+			<input type="datetime" name="fecha_hora" placeholder="Fecha y Hora" />
+		</p>
+		<p>
+			<input type="week" name="semana" placeholder="Semana" />
+		</p>
+		<p>
+			<input type="month" name="Mes" placeholder="Mes" />
+		</p>
+		
+		
+		
+	</form>
+	<p>&nbsp;</p>
+</body>
+</html>
