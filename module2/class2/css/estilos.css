@@ -1,0 +1,165 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+body{
+	background-color: black;
+	font-size: 18px;
+	font-family: 'el_rio_lobonormal', arial;
+}
+#wrapper{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid red;
+	position: relative;
+	background-color: white;
+}
+header > a{
+	display: inline-block;
+	border: 1px solid pink;
+}
+header hgroup{
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	width: 111px;
+	height: 32px;
+	text-indent: -5000px;
+}
+header ul{
+	position: absolute;
+	top: 1px;
+	right: 1px;
+}
+header ul li{
+	display: inline-block;
+}
+header ul a{
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	text-indent: -5000px;
+	display: block;
+	border: 1px solid orange;
+}
+/* CSS Sprites */
+#twitter{
+	background-image: url("../img/redes.png");
+	background-position: 0px 0px;
+}
+#facebook{
+	background-image: url("../img/redes.png");
+	background-position: 0px -32px;
+}
+nav{
+	background-color: rgba(50,50,50,0.5);
+	position: relative;
+}
+nav li{
+	display: inline-block;
+	border: 1px solid blue;
+}
+nav a{
+	text-decoration: none;
+	display: block;
+	padding: 5px 20px 8px 20px;
+	color: red;
+}
+nav a:hover{
+	background-color: rgba(250,150,20,0.5);
+}
+nav form{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+/*	float: right; */
+}
+#fotazo img{
+	width: 100%;
+}
+.cuadro{
+	display: inline-block;
+	width: 31%;
+	border: 1px solid blue;
+	padding: 5px;
+	box-shadow: 0px 0px 3px black;
+	margin: 0px 5px;
+}
+.cuadro img{
+	float: left;
+	margin: 5px;
+	max-width: 50%;
+}
+.solo-movil{
+	display: none;
+}
+@media(max-width: 800px) and (min-width: 740px) {
+	body{
+		background-color: green;
+		font-size: 15px;
+	}
+	#wrapper{
+		width: 90%;
+		border: 0px;
+		background-color: white;
+	}
+	header > a{
+		display: block;
+	}
+	header hgroup{
+		background-image: url("../img/logo1.jpg");
+		width: 200px;
+		height: 91px;
+		margin: 0 auto;
+		display: none;
+	}
+	.solo-movil{
+		display: block;
+	}
+	header ul{
+		float: right;
+		position: relative;
+	}
+	nav li{
+		display: block;
+		border: 1px solid blue;
+		margin: 5px 0px;
+	}
+	nav form{
+		float: left;
+		position: relative;
+		width: 100%;
+	}
+	nav input{
+		width: 100%;
+	}
+	.cuadro{
+		display: block;
+		width: 90%;
+		margin: 10px auto;
+	}
+	.cuadro img{
+		display: none;
+	}
+}
+@media(max-width: 480px) {
+	body{
+		background-color: pink;
+		font-size: 12px;
+	}
+}
+/*
+@media (orientation: portrait ) {
+	body{
+		background-color: yellow;
+	}
+}
+@media (orientation: landscape) {
+	body{
+		background-color: blue;
+	}
+}
+*/
