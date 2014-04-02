@@ -1,0 +1,13 @@
+body{
+	background-color: white;
+}
+img{
+	width: 50%;
+}
+/*img:before{
+	background-image: url("../img/logo.png");
+}*/
+*{
+	background-color: white;
+	color: black;
+}

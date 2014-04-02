@@ -1,0 +1,200 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+	background-color: black;
+	-webkit-transition: all ease-in-out 3s;
+	-moz-transition: all ease-in-out 3s;
+	-ms-transition: all ease-in-out 3s;
+	-o-transition: all ease-in-out 3s;
+	transition: all ease-in-out 3s;
+}
+#contenedor{
+	width: 960px;
+	margin: 0 auto;
+	border: 3px solid red;
+}
+header a{
+	display: block;
+	width: 200px;
+/*	margin: 0 auto; */
+	position: relative;
+	-webkit-animation-name: logo;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	z-index: 9999;
+}
+
+header hgroup{
+	background-image: url("../img/logo.jpg");
+	width: 200px;
+	height: 91px;
+	text-indent: -5000px;
+}
+nav{
+	margin: 15px 0px;
+}
+nav li{
+	display: inline-block;
+	width: 33%;
+}
+nav a{
+	display: block;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0,200,0,0.5);
+	font-size: 1.5em;
+	-webkit-transition: all ease-in-out 1s;
+	-moz-transition: all ease-in-out 1s;
+	-ms-transition: all ease-in-out 1s;
+	-o-transition: all ease-in-out 1s;
+	transition: all ease-in-out 1s;
+}
+nav a:hover, nav .actual{
+	text-decoration: underline;
+	background-color: rgba(0,200,0,0.2);
+}
+/* Galeria de imágenes */
+
+section li{
+	display: inline-block;
+	width: 49%;
+	padding: 5px 3px;
+}
+section a{
+	display: block;
+	padding: 10px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px yellow;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all ease-in-out 1s;
+	-moz-transition: all ease-in-out 1s;
+	-ms-transition: all ease-in-out 1s;
+	-o-transition: all ease-in-out 1s;
+	transition: all ease-in-out 1s;
+	
+}
+section a:hover{
+	background-color: skyblue;
+	/*
+	-webkit-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+	*/
+	/*
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	*/
+	/*
+	-webkit-transform: translate(10px,-25px);
+	-moz-transform: translate(10px,-25px);
+	-ms-transform: translate(10px,-25px);
+	-o-transform: translate(10px,-25px);
+	transform: translate(10px,-25px);
+	*/
+	/*
+	-webkit-transform: rotate(12deg) scale(1.2) translate(40%, -30px);
+	-moz-transform: rotate(12deg) scale(1.2) translate(40%, -30px);
+	-ms-transform: rotate(12deg) scale(1.2) translate(40%, -30px);
+	-o-transform: rotate(12deg) scale(1.2) translate(40%, -30px);
+	transform: rotate(12deg) scale(1.2) translate(40%, -30px);
+	*/
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transform-origin: right top;
+}
+section a:after{
+	content: attr(title);
+}
+section li:nth-child(2n){
+-webkit-transform: rotate(-7deg);
+-moz-transform: rotate(-7deg);
+}
+section li:nth-child(3n){
+-webkit-transform: rotate(-5deg);
+-moz-transform: rotate(-5deg);
+}
+section li:nth-child(n+2){
+-webkit-transform: rotate(9deg);
+-moz-transform: rotate(9deg);
+}
+
+section img{
+	width: 100%;
+	margin: 0px 0px 5px;
+}
+.solo_movil{
+	display: none;
+}
+@media(max-width: 740px) {
+	body{
+		font-size: 12px;
+		background-color: grey;
+	}
+	#contenedor{
+		width: 680px;
+	}
+	nav li{
+		display: block;
+		width: 100%;
+		margin: 4px 0px;
+	}
+	nav a{
+		color: white;
+		background-color: rgba(0,0,100,0.5);
+	}
+	.solo_movil{
+		display: block;
+	}
+	header a{
+		width: 400px;
+	}
+	header hgroup{
+		display: none;
+	}
+}
+@media(max-width: 480px) {
+	body{
+		font-size: 10px;
+		background-color: white;
+	}
+	#contenedor{
+		width: 420px;
+		border: 1px solid yellow;
+	}
+}
+
+@-webkit-keyframes logo{
+	0%, 100%{
+		left: 0px;
+		top: 0px;
+	}
+	25%, 75%{
+		left: 400px;
+		top: 0px;
+	}
+	50%{
+		left: 800px;
+		top: 250px;
+	}
+}

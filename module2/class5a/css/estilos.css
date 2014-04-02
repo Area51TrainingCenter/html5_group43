@@ -1,0 +1,61 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+body{
+	font-family: arial, helvetica;
+	font-size: 16px;
+	background-color: black;
+}
+nav{
+	border: 1px solid green;
+}
+nav ul{
+	text-align: center;
+	border: 1px solid yellow;
+}
+nav li{
+	display: inline-block;
+	vertical-align: top;
+}
+nav a{
+	text-decoration: none;
+	color:#48C4B1;
+	border-radius: 10px;
+	background-color: #E1E2DE;
+/*	background-color: rgba(225,226,222,0.5); */
+	display: block;
+	padding:10px 20px;
+	opacity: 0.5; 
+/* Factorizando CSS */
+	background-repeat: no-repeat;
+	background-position: center 100px; /* X Y */
+	-webkit-transition: background-position 1s ease-in-out, background-color 2s ease-in, padding .5s ease-in-out;
+}
+nav a:hover{
+	opacity: 1;
+	background-position: center top;
+	padding: 80px 40px 10px 40px;
+	color: #1B9636;
+	background-color: #45473D;
+}
+nav li:nth-child(1) a{
+	background-image: url("../img/casita.png");
+}
+nav li:nth-child(2) a{
+	background-image: url("../img/fabrica.png");
+}
+nav li:nth-child(3) a{
+	background-image: url("../img/cajita.png");
+}
+nav li:nth-child(4) a{
+	background-image: url("../img/lupita.png");
+}
+nav li:nth-child(5) a{
+	background-image: url("../img/telefono.png");
+}
