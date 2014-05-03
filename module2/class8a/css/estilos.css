@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* Elementos HTML */
+body{
+	background: white;
+	font-family: "Georgia", Arial, Helvetica, Verdana;
+	font-size: 14px;
+	padding-top: 50px;
+}
+.navbar{
+	
+}

@@ -1,0 +1,8 @@
+body{ overflow:hidden; }
+div {width: 340px; margin: 0 auto; text-align: center;}
+h1 { font-size: 24px; margin-bottom: 30px; }
+
+span { border: 1px solid black; width: 50px; height: 50px; margin-left: 20px; float: right; background-color: red; text-indent: -9000px;  -webkit-transition:all 1s ease-out; box-shadow: 5px 5px 10px rgba(0,0,0,0.4); }
+span:last-child { margin-left: 0;} 
+/*span:hover  { background-color: yellow;  border-radius: 25px;}*/
+span:hover, span:hover ~ span { background-color: yellow;  border-radius: 50%; border-color: red; -webkit-transform: rotate(360deg); }
