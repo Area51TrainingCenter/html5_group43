@@ -1,0 +1,208 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	text-align: center;
+	font-size: 16px;
+}
+
+h1
+{
+	font-size: 1.8rem;
+}
+
+p
+{
+	font-size: 1rem;
+}
+
+header
+{
+position: fixed;
+width: 100%;
+background-color: rgba(255,255,255,0.4);
+z-index:1;
+}
+
+button
+{
+	font-size:30px;				
+}
+
+.logo
+{
+	color:#74EA09;
+}
+
+.menu-holder ul
+{
+	list-style: none;
+}
+
+.menu-holder li
+{
+	display: inline-block;
+	vertical-align: top;
+	margin:5px 2px;
+	position: relative;
+}
+
+.link
+{
+	color:#fff;
+	background-color: #306F1E;
+	display: block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	-ms-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+
+.link.active, .link:hover
+{
+	color:#306F1E;
+	background-color:#fff;
+	padding:20px;
+	margin:0 10px;
+}
+
+.areas-list
+{
+	text-align: center;
+	list-style: none;
+	font-size: 0;
+}
+
+
+
+.selected
+{
+	background-color: #fff;
+}
+
+
+.wrapper
+{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.areas-list section
+{
+	padding-top: 120px;
+	height: 900px;
+}
+
+
+.photos-list
+{
+	width: 900px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	border:10px solid #fff;
+	border-radius: 20px;
+	box-shadow: 1px 1px 10px #000;
+}
+
+.photos-list li
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.areas-list .wrapper
+{
+	background-color: rgba(255,255,255,.7);
+}
+
+.btn_subir
+{
+	font-size: 300%;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50px;
+	background: rgba(255,255,255,.6);
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	cursor: pointer;
+	display: none;
+	text-decoration: none;
+}
+
+.girar
+{
+	-webkit-animation:animacion .5s;
+	-moz-animation:animacion .5s;
+	animation:animacion .5s;
+}
+
+@-webkit-keyframes animacion{
+	from{
+		-webkit-transform: rotate(0deg) scale(5);
+	}
+	to{
+		-webkit-transform: rotate(360deg) scale(1);
+	}
+}
+
+@-moz-keyframes animacion{
+	from{
+		-moz-transform: rotate(0deg) scale(5);
+	}
+	to{
+		-moz-transform: rotate(360deg) scale(1);
+	}
+}
+
+@keyframes animacion{
+	from{
+		transform: rotate(0deg) scale(5);
+	}
+	to{
+		transform: rotate(360deg) scale(1);
+	}
+}
+
+#inicio,#carta,#instalaciones,#fotos,#contacto
+{
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+
+#inicio
+{
+	background-image:url(../img/inicio-bg.jpg);
+}
+#carta
+{
+	background-image:url(../img/carta-bg.jpg);
+}
+#instalaciones
+{
+	background-image:url(../img/instalaciones-bg.jpg);
+}
+#fotos
+{
+	background-image:url(../img/fotos-bg.jpg);
+}
+#contacto
+{
+	background-image:url(../img/contacto-bg.jpg);
+}
+
+
+

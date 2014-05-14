@@ -1,0 +1,75 @@
+<!doctype html>  
+<html>  
+<head>  
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />  
+<title>File(s) size</title>  
+ 
+</head>  
+  
+<body>  
+<form>
+
+<p>Pick an image file:</p>
+<input type="file" id="file_selector" />
+<input type="button" id="upload" value="Upload Image" disabled />
+
+<script type="text/javascript">
+var file_selector = document.getElementById("file_selector");
+
+
+
+file_selector.addEventListener("change", function(){
+    var files_array = this.files;
+    // we only allowed one file to be selected
+    if (files_array[0].type.match(/image/)) { // it's an image file
+        read_image_file(files_array[0]);
+
+        file_selector.disabled = true; // disable the file selector now
+        var upload = document.getElementById("upload");
+        upload.disabled = false;
+        
+        
+        
+        upload.addEventListener("click", function(){
+        	
+            upload_file(files_array[0]);
+            
+            
+            
+        }, false);
+    }
+}, false);
+
+
+function upload_file(file) {
+
+	
+	
+	
+    var xhr = new XMLHttpRequest();
+  
+    xhr.setRequestHeader("Content-Type", "multipart/form-data");
+    xhr.setRequestHeader("X-File-Name", file.fileName);
+    xhr.setRequestHeader("X-File-Size", file.fileSize);
+    xhr.setRequestHeader("X-File-Type", file.type);
+    xhr.open("GET", "image_upload.php");
+    xhr.send(file);
+}
+
+function read_image_file(file) {
+    var reader = new FileReader();
+    reader.onload = function(e){
+        var image_contents = e.target.result;
+        var img = document.createElement("img");
+        img.src = image_contents;
+        document.body.appendChild(img);
+    };
+    reader.readAsDataURL(file);
+}
+</script>
+
+
+</form>
+
+</body>  
+</html>  

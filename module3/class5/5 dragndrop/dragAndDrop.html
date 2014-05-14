@@ -1,0 +1,56 @@
+<!doctype html>  
+<html>  
+<head>  
+<title>Arrastrar Elementos</title>
+
+<!-- para ahorrar tiempo este script, estamos usando jquery -->  
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<style type="text/css">
+
+.basurero{
+	background:url(img/trashcan1.png) no-repeat;
+	width: 300px;
+	height: 600px;
+	float: left;
+}
+.basurero.activo{
+	background:url(img/trashcan2.png) no-repeat;
+}
+.basura {float: right; margin: 0 30px 0 0}
+.basura li{
+	border-bottom: solid 1px;
+	height: 200px;
+	width: 200px;
+	display: block;
+	background: url(img/banano.png) no-repeat;
+	text-indent: -99999px;
+	overflow: hidden;
+}
+
+</style>
+
+
+
+
+</head>  
+  
+<body>  
+
+<div class="basurero"   ></div>
+
+<ul class="basura">
+	<li draggable="true" ondragstart="arrastrando()"  ondragend="soltando()">banano</li>
+
+</ul>
+
+<script>
+function arrastrando(){
+	$(".basurero").toggleClass("activo");
+}
+function soltando(){
+	$(".basurero").toggleClass("activo");
+	$(".basura").hide();
+}
+</script>
+</body>  
+</html>  

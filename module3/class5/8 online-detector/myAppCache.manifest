@@ -1,0 +1,10 @@
+CACHE MANIFEST
+
+FALLBACK:
+#  
+files/show.css      files/show_offline.css
+
+CACHE:
+files/show_offline.css
+index.html
+#version 3

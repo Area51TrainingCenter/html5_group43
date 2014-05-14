@@ -1,0 +1,78 @@
+<!DOCTYPE html">
+<html>
+  <head>
+    <title>Base de Datos</title> 
+    <script type="text/javascript" charset="utf-8">
+    // Se puede declarar como prototype
+// Creacion global
+    var db = window.openDatabase("Database", "1.0", "html5 Demo", 200000 );
+    // openDatabase(nombreBD, , , tamano archivo)
+    function onLoad() {
+        // Es asincrona solo se pone 1
+          db.transaction(populateDB, errorCB, successCB);
+		    // Si quiero ejecutar mas debo de ponerlas en la funcion successCB
+    }
+    
+    
+
+    // Populate the database 
+    //
+    function populateDB(tx) {
+		
+        tx.executeSql('DROP TABLE IF EXISTS DEMO');
+        // Por defecto define un varchar
+        tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+        tx.executeSql('INSERT INTO DEMO (id, data) VALUES (3, "tres")');
+        tx.executeSql('INSERT INTO DEMO (id, data) VALUES (4, "cuatro")');
+       
+    }
+    
+    
+    function successCB() {
+       
+        db.transaction( function(tx) {
+            // executeSQL(sql,cadenas de reemplazo, objeto resultado)
+            tx.executeSql('SELECT * FROM DEMO', [] , renderResults);
+        });
+    }
+    function renderScores() {
+        db.transaction( function(tx) {
+            tx.executeSql('SELECT * FROM DEMO', [] , renderResults);
+        });         
+      }
+    // Query the success callback
+    function renderResults(tx, rs) {
+    
+       var  resultados =  document.getElementById("resulados")
+       
+       var string = "";
+        for(var i=0; i < rs.rows.length; i++) {
+          r = rs.rows.item(i);
+          string += r['id']+" / "+ r['data']+ '<br />'
+		 }
+        resultados.innerHTML =string
+//        $("#resultados").html(string)
+      }
+    // Transaction error callback
+    //
+    function errorCB(err) {
+        console.log("Error processing SQL: "+err.code);
+    }
+
+    // Transaction success callback
+    //
+    </script>
+  </head>
+  <body >
+  	<header>
+  		<h1>Ejemplo</h1>
+    	<p>Database</p>
+  	</header>
+    <section>
+    	<article>
+    		<div id="resulados">
+    		</div>
+    	</article>
+    </section>
+  </body>
+</html>

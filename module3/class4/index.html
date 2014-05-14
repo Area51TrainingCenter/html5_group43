@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Conociendo jQuery</title>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/clase4.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <h1>Título del sitio</h1>
+            <h2>Sub título del sitio</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#inicio" id="mnuInicio">Inicio</a></li>
+                <li><a href="#noticias" id="mnuNoticias">Noticias</a></li>
+                <li><a href="#galeria" id="mnuGaleria">Galeria</a></li>
+                <li><a href="#contacto" id="mnuContacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="inicio"></div>
+        <div id="noticias">
+            <span class="noticia">
+               <h3><a href="enlace.html" title="descripcion del enlace">Título de parrafo 1</a></h3>
+                <p>Lorem ipsum dolor sit em 1</p>
+                <p class="aqui">Lorem ipsum dolor sit em 2!!!</p>
+                <p>Lorem ipsum dolor sit em 3</p>
+            </span>
+            <span class="noticia">
+               <h3><a href="enlace.html" title="descripcion del enlace">Título de parrafo 2</a></h3>
+                <p>Lorem ipsum dolor sit em 1</p>
+                <p>Lorem ipsum dolor sit em 2</p>
+                <p>Lorem ipsum dolor sit em 3</p>
+            </span>
+        </div>
+        <div id="galeria"></div>
+        <div id="contacto">
+            
+            <div id="rpta_servicios"></div>
+            <form name="contacto" id="frm_contacto" method="post" action="procesar.php">
+                <fieldset>
+                    <legend>Comunicate con nosotros</legend>
+                    <p><label for="txt_nombre">Nombre</label>
+                        <input type="text" name="nombre" id="txt_nombre" placeholder="Pon tu nombre" />
+                        <span id="msj_nombre"></span></p>
+                    <p><label for="txt_correo">Correo</label>
+                        <input type="text" name="correo" id="txt_correo" placeholder="Pon tu correo" />
+                        <span id="msj_correo"></span></p>
+                    <p><label for="cb_ciudad">Ciudad</label>
+                        <select name="ciudad" id="cb_ciudad">
+                            <option value="0">Ciudad</option>
+                            <option value="1">Lima</option>
+                            <option value="2">Callao</option>
+                            <option value="3">Iquitos</option>
+                            <option value="4">Cuzco</option>
+                        </select></p>
+                    <p><label for="cb_distrito">Distrito</label>
+                        <span id="rpta_ajax">
+                            <select name="distrito" id="cb_distrito">
+                                <option value="0">Seleccione ciudad</option>
+                            </select>
+                        </span></p>
+                    <p><label for="txt_mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="txt_mensaje" placeholder="Pon tu mensaje"></textarea>
+                        <span id="msj_mensaje"></span></p>
+                    <p><button type="submit">Enviar</button></p>
+                    
+                </fieldset>
+            </form>
+
+        </div>
+        <div id="pie" style="background-color: red;">
+            <p>Pie del sitio</p>
+        </div>
+        <hr />
+        <p><a href="https://docs.google.com/presentation/d/1g7mHXaidbX4LJBLFq6y3B_MLhWZlXNPS771JJSxEexs/edit?usp=sharing">Presentación</a></p>
+    </body>
+</html>

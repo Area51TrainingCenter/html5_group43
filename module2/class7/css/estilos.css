@@ -1,0 +1,57 @@
+.container_12 {
+  background-image: url(../img/12_col.gif);
+}
+
+.container_16 {
+  background-image: url(../img/16_col.gif);
+}
+
+.container_24 {
+  background-image: url(../img/24_col.gif);
+}
+header{
+  background-color: #401d0a;
+  background-image: url("../img/bg_home.jpg");
+  background-repeat: repeat-x;
+  background-position: center top;
+}
+header hgroup{
+  background: transparent url("../img/logo-cafe51.png") no-repeat 0px 0px;
+  width: 195px;
+  height: 195px;
+  margin: 0px 0px -45px 22px;
+  display: inline-block;
+  z-index: 10px;
+  position: relative;
+}
+header hgroup h1, header hgroup h2{
+  display: none;
+}
+
+nav {
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  top: 100px;
+  text-align: right;
+}
+nav li{
+  display: inline-block;
+  padding: 8px 10px;
+}
+nav li:last-child{
+  padding-right: 0px!important;
+}
+nav a{
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 5px 15px;
+  border: 1px solid transparent;
+}
+nav a:hover, nav a:focus, nav .activo{
+  background: #fcb435;
+  box-shadow: inset 0 10px 15px rgba(255,255,255, 0.3), inset 0 -15px 25px rgba(180,120,10, 0.7) ;
+  border: 1px solid #b1770b;
+  color: #4b2a15;
+}

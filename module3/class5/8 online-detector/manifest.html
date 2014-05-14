@@ -1,0 +1,30 @@
+
+<!DOCTYPE HTML>
+
+<html manifest="./myAppCache.manifest">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>probando conexion</title>
+        
+        
+     
+        
+<script type="text/javascript" language="javascript">
+	function update() {
+	        elt = document.getElementById("status");
+	        elt.innerHTML = (navigator.onLine ? "Online" : "Offline");
+	}
+	function init() {
+	        setInterval("update()", 500);
+	}
+</script>
+
+</head>
+
+<body onload="init();">
+
+<div>Estado: <span id="status"></span></div>
+
+</body>
+</html>

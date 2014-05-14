@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+	
+	<title>Fullscreen API</title>
+
+</head>
+<body>
+	
+	
+<br />
+<br /><br /><br /><br /><br /><br />
+<button onclick="fullScreen()">Fullscreen</button>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />Hola<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<script>
+
+
+var viewFullScreen = document.getElementById("view-fullscreen");
+var docElm = document.documentElement;
+
+
+function fullScreen(){
+
+	if (docElm.mozRequestFullScreen) {
+		docElm.mozRequestFullScreen();
+	}else if (docElm.webkitRequestFullScreen) {
+		docElm.webkitRequestFullScreen();
+	}
+}
+
+
+
+</script>
+	
+</body>
+</html>
